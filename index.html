@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="guessTheNumber.css">
+    <link rel="icon" type="image.png" href="siteLogo.png">
+</head>
+<body>
+    <h1><u><b>Guess The Number</b></u></h1>
+
+    <div id="start">
+        <h2 id="rangeValue">Time will Be : 60</h2>
+        <input type="range" id="range" min="10" max="120" value="60" onInput="time = this.value">
+        <h2 id="rangeValue2">The number could be up to : 100</h2>
+        <input type="range" id="range2" min="10" max="200" value="100" onInput="maxNum = this.value">
+        <br><br><button id="startGameBtn" onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="end">
+        <h2 id="timeLeft"></h2>
+        <h2 id="score"></h2>
+    </div>
+
+    <div id="game">
+        <div id="notRestart">
+            <h2 id="timer">Time left : 30s</h2>
+            <h2 id="tries">Tries : 0</h2>
+            <h2 id="hints">Try A number</h2>
+            <input id="answer" type="number">
+            <br><br><button id="checkAnswer" onClick="checks()">Check Answer</button>
+
+        </div>
+        <br><button id="restart" onClick="restart()">New Game</button>
+    </div>
+    
+    <script src="guessTheNumber.js"></script>
+</body>
+</html>
