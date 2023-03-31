@@ -42,13 +42,13 @@ function checks() {
     answer = document.getElementById("answer").value;
     document.getElementById("answer").value = "";
     if (answer > randomNumber) {
-        hints.innerText = "Try Less";
+        hints.innerText = "Try smaller number";
     }
     else if(answer < randomNumber){
-        hints.innerText = "Try more";
+        hints.innerText = "Try a bigger number";
     }
     else if(answer = randomNumber){
-        hints.innerText = "Nice!";
+        hints.innerText = "Nice! You got the number!";
         won();
     }
 }
