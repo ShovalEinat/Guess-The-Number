@@ -26,6 +26,10 @@ body{
     width: 300px;
 }
 
+#range::-webkit-slider-thumb, #range2::-webkit-slider-thumb {
+    cursor: pointer;
+}
+
 #checkAnswer, #startGameBtn{
     font-size: 30px;
     padding: 10px 20px;
