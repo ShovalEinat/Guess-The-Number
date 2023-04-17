@@ -87,5 +87,6 @@ function won() {
     scoreSpan.innerHTML = "Tries : " + tries;
     document.getElementById("notRestart").style.display = "none";
     document.getElementById("restart").style.display = "block";
+    clearInterval(countdownInterval);
     audio.play();
 }
